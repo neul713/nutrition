@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" style="-fx-background-color: #CED8F6;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <TextArea id="messeage" layoutX="16.0" layoutY="109.0" prefHeight="144.0" prefWidth="369.0" />
+      <TextField id="messageId" layoutX="16.0" layoutY="45.0" />
+      <Label layoutX="17.0" layoutY="19.0" text="ID">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="83.0" text="Message">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button id="btnSend" layoutX="317.0" layoutY="258.0" mnemonicParsing="false" style="-fx-background-color: #CED8F6;" text="Send">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

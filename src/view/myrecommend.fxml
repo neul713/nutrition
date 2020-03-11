@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #CED8F6;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MyRecommendController">
+   <children>
+      <TableView fx:id="recommendTableView" layoutX="19.0" layoutY="67.0" prefHeight="410.0" prefWidth="651.0" />
+      <Label fx:id="lblId" alignment="CENTER_RIGHT" layoutX="452.0" layoutY="38.0" prefHeight="21.0" prefWidth="109.0">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <ImageView fx:id="imgRecommendProduct" fitHeight="230.0" fitWidth="200.0" layoutX="684.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="561.0" layoutY="38.0" text="님의 ♥LIKE♥">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="684.0" layoutY="214.0" text="Product Image">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="510.0" prefWidth="410.0" style="-fx-background-color: #CED8F6;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="400.0" layoutX="11.0" layoutY="7.0" nodeOrientation="INHERIT" pickOnBounds="true">
+         <image>
+            <Image url="@../images/loginImage.png" />
+         </image>
+         <rotationAxis>
+            <Point3D />
+         </rotationAxis>
+      </ImageView>
+      <Label layoutX="101.0" layoutY="275.0" text="ID">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <TextField fx:id="txtId" layoutX="144.0" layoutY="275.0" style="-fx-background-color: #CED8F6;" />
+      <Label layoutX="75.0" layoutY="315.0" text="PWD">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <PasswordField fx:id="txtPassword" layoutX="143.0" layoutY="314.0" style="-fx-background-color: #CED8F6;" />
+      <Button fx:id="btnLogin" layoutX="142.0" layoutY="358.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Login">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="btnSignUp" layoutX="213.0" layoutY="358.0" mnemonicParsing="false" style="-fx-background-color: white;" text="SignUp">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <ImageView fitHeight="51.0" fitWidth="41.0" layoutX="320.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/admin.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnAdmin" layoutX="320.0" layoutY="163.0" mnemonicParsing="false" opacity="0.0" prefHeight="48.0" prefWidth="40.0">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <Button fx:id="btnIdPasswordFind" layoutX="126.0" layoutY="443.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Forgot your ID or PWD?" />
+   </children>
+   <rotationAxis>
+      <Point3D />
+   </rotationAxis>
+</AnchorPane>

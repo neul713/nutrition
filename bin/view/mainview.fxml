@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1210.0" style="-fx-background-color: #CED8F6;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainViewController">
+   <children>
+      <TabPane layoutX="29.0" layoutY="43.0" prefHeight="150.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="효능으로 검색">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <RadioButton fx:id="searchRadioBtnLiver" layoutX="43.0" layoutY="23.0" mnemonicParsing="false" text="간 기능 강화">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="SearchGroup" />
+                           </toggleGroup>
+                           <font>
+                              <Font size="18.0" />
+                           </font></RadioButton>
+                        <RadioButton fx:id="searchRadioBtnTired" layoutX="253.0" layoutY="23.0" mnemonicParsing="false" text="피로 회복" toggleGroup="$SearchGroup">
+                           <font>
+                              <Font size="18.0" />
+                           </font></RadioButton>
+                        <RadioButton fx:id="searchRadioBtnAntioxidant" layoutX="463.0" layoutY="23.0" mnemonicParsing="false" text="항산화 기능 강화" toggleGroup="$SearchGroup">
+                           <font>
+                              <Font size="18.0" />
+                           </font></RadioButton>
+                        <Button fx:id="btnEfficacySearch" layoutX="699.0" layoutY="64.0" mnemonicParsing="false" style="-fx-background-color: #CED8F6;" text="Search">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Button>
+                        <RadioButton fx:id="searchRadioBtnEye" layoutX="43.0" layoutY="66.0" mnemonicParsing="false" text="눈 건강" toggleGroup="$SearchGroup">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="searchRadioBtnImmunity" layoutX="463.0" layoutY="66.0" mnemonicParsing="false" text="면역력 증가" toggleGroup="$SearchGroup">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="searchRadioBtnJoint" layoutX="253.0" layoutY="66.0" mnemonicParsing="false" text="관절 영양" toggleGroup="$SearchGroup">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </RadioButton>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="이름으로 검색">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="txtNameSearch" layoutX="14.0" layoutY="35.0" prefHeight="32.0" prefWidth="354.0" promptText="제품명을 입력해주세요.">
+                           <font>
+                              <Font size="18.0" />
+                           </font></TextField>
+                        <Button fx:id="btnNameSearch" layoutX="699.0" layoutY="64.0" mnemonicParsing="false" style="-fx-background-color: #CED8F6;" text="Search">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Button>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Separator layoutX="852.0" layoutY="29.0" orientation="VERTICAL" prefHeight="828.0" prefWidth="12.0" />
+      <Separator layoutX="29.0" layoutY="196.0" prefHeight="14.0" prefWidth="800.0" />
+      <TableView fx:id="searchTableView" layoutX="30.0" layoutY="249.0" prefHeight="252.0" prefWidth="800.0" />
+      <TextField fx:id="detailsProductName" layoutX="883.0" layoutY="372.0" prefHeight="33.0" prefWidth="286.0" />
+      <Label layoutX="883.0" layoutY="29.0" text="Details">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="883.0" layoutY="339.0" text="제품명">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="883.0" layoutY="425.0" text="가 격">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="883.0" layoutY="516.0" text="효 능">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="883.0" layoutY="604.0" text="제조사">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="883.0" layoutY="681.0" text="원재료/성분">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="detailsProductPrice" layoutX="883.0" layoutY="458.0" prefHeight="33.0" prefWidth="286.0" />
+      <TextField fx:id="detailsProductEfficacy" layoutX="883.0" layoutY="547.0" prefHeight="33.0" prefWidth="286.0" />
+      <TextField fx:id="detailsProductCompany" layoutX="883.0" layoutY="632.0" prefHeight="33.0" prefWidth="286.0" />
+      <Label layoutX="29.0" layoutY="538.0" text="♥BEST 3♥">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="595.0" text="1위">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="309.0" layoutY="595.0" text="2위">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="586.0" layoutY="595.0" text="3위">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnSearchAllView" layoutX="31.0" layoutY="212.0" mnemonicParsing="false" style="-fx-background-color: #CED8F6;" text="ALL">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="btnMyPage" layoutX="100.0" layoutY="13.0" mnemonicParsing="false" style="-fx-background-color: CED8F6;" text="my page" />
+      <TextArea fx:id="detailsProductIngredient" layoutX="883.0" layoutY="714.0" prefHeight="150.0" prefWidth="286.0" />
+      <ImageView fx:id="detailsProductImage" fitHeight="206.0" fitWidth="300.0" layoutX="883.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btnRecommend" layoutX="986.0" layoutY="292.0" mnemonicParsing="false" style="-fx-background-color: #CED8F6;" text="♥LIKE♥">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <ImageView fx:id="imgTop1" fitHeight="150.0" fitWidth="240.0" layoutX="30.0" layoutY="625.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imgTop2" fitHeight="150.0" fitWidth="240.0" layoutX="307.0" layoutY="625.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imgTop3" fitHeight="150.0" fitWidth="240.0" layoutX="584.0" layoutY="625.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="209.0" layoutY="596.0" text="♥" textFill="RED" />
+      <Label layoutX="764.0" layoutY="596.0" text="♥" textFill="RED" />
+      <Label layoutX="482.0" layoutY="596.0" text="♥" textFill="RED" />
+      <Button fx:id="btnRefresh" layoutX="721.0" layoutY="543.0" mnemonicParsing="false" style="-fx-background-color: #CED8F6;" text="Refresh~">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="btnMyRecommend" layoutX="181.0" layoutY="13.0" mnemonicParsing="false" style="-fx-background-color: #CED8F6;" text="♥I Like it!♥" />
+      <Button fx:id="btnLogOut" layoutX="30.0" layoutY="13.0" mnemonicParsing="false" style="-fx-background-color: CED8F6;" text="Logout" />
+      <Label fx:id="lblId" alignment="CENTER_RIGHT" layoutX="598.0" layoutY="19.0" prefHeight="19.0" prefWidth="105.0" />
+      <Label layoutX="705.0" layoutY="19.0" text="님 환영합니다^0^" />
+      <Label fx:id="recommendCount1" layoutX="236.0" layoutY="592.0" prefHeight="29.0" prefWidth="32.0" text="   " />
+      <Label fx:id="recommendCount2" layoutX="512.0" layoutY="592.0" prefHeight="29.0" prefWidth="32.0" text="   " />
+      <Label fx:id="recommendCount3" layoutX="790.0" layoutY="592.0" prefHeight="29.0" prefWidth="32.0" text="   " />
+      <Label fx:id="top1Name" layoutX="30.0" layoutY="783.0" prefHeight="29.0" prefWidth="172.0" />
+      <Label fx:id="top1Efficacy" layoutX="30.0" layoutY="818.0" prefHeight="29.0" prefWidth="172.0" />
+      <Label fx:id="top2Name" layoutX="308.0" layoutY="783.0" prefHeight="29.0" prefWidth="172.0" />
+      <Label fx:id="top2Efficacy" layoutX="308.0" layoutY="818.0" prefHeight="29.0" prefWidth="172.0" />
+      <Label fx:id="top3Name" layoutX="584.0" layoutY="783.0" prefHeight="29.0" prefWidth="172.0" />
+      <Label fx:id="top3Efficacy" layoutX="584.0" layoutY="818.0" prefHeight="29.0" prefWidth="172.0" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="806.0" layoutY="847.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/message.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnSendMessage" layoutX="796.0" layoutY="845.0" mnemonicParsing="false" opacity="0.0" prefHeight="39.0" prefWidth="54.0" style="-fx-background-color: CED8F6;" />
+   </children>
+</AnchorPane>

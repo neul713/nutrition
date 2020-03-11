@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="630.0" style="-fx-background-color: #CED8F6;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SignUpController">
+   <children>
+      <Label layoutX="18.0" layoutY="50.0" text="ID" />
+      <TextField fx:id="txtId" layoutX="109.0" layoutY="45.0" />
+      <Label layoutX="18.0" layoutY="100.0" text="PWD" />
+      <PasswordField fx:id="txtPassword" layoutX="109.0" layoutY="94.0" />
+      <PasswordField fx:id="txtPasswordCheck" layoutX="109.0" layoutY="144.0" />
+      <Label layoutX="18.0" layoutY="150.0" text="PWD Check" />
+      <Label layoutX="18.0" layoutY="200.0" text="NAME" />
+      <Label layoutX="18.0" layoutY="250.0" text="BIRTH" />
+      <Label layoutX="18.0" layoutY="350.0" text="어떻게 이 프로그램을 알게 되었나요?" />
+      <ComboBox fx:id="cbSurvey" layoutX="18.0" layoutY="381.0" prefHeight="29.0" prefWidth="172.0" promptText="선택해주세요^^" />
+      <DatePicker fx:id="dpBirth" layoutX="109.0" layoutY="242.0" prefHeight="29.0" prefWidth="172.0" />
+      <TextField fx:id="txtName" layoutX="109.0" layoutY="193.0" />
+      <Button fx:id="btnDuplicate" layoutX="283.0" layoutY="45.0" mnemonicParsing="false" style="-fx-background-color: #CED8F6;" text="Duplicate?" />
+      <Label layoutX="18.0" layoutY="300.0" text="NUMBER" />
+      <TextField fx:id="txtPhoneNumber" layoutX="109.0" layoutY="290.0" prefHeight="29.0" prefWidth="172.0" promptText="숫자만 입력해주세요." />
+      <ImageView fx:id="imgUserPhoto" fitHeight="230.0" fitWidth="200.0" layoutX="396.0" layoutY="55.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/defaultPhoto.png" />
+         </image></ImageView>
+      <Button fx:id="btnUserPhotoUp" layoutX="445.0" layoutY="309.0" mnemonicParsing="false" style="-fx-background-color: #CED8F6;" text="Up" />
+      <Button fx:id="btnSignUp" layoutX="418.0" layoutY="400.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="172.0" style="-fx-background-color: #CED8F6;" text="Registration!">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button fx:id="btnUserPhotoDown" layoutX="489.0" layoutY="309.0" mnemonicParsing="false" style="-fx-background-color: #CED8F6;" text="Delete" />
+   </children>
+</AnchorPane>

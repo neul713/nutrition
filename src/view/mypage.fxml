@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="600.0" style="-fx-background-color: #CED8F6;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MyPageController">
+   <children>
+      <Label layoutX="29.0" layoutY="265.0" text="ID" />
+      <TextField fx:id="txtId" layoutX="117.0" layoutY="260.0" />
+      <Label layoutX="29.0" layoutY="310.0" text="PWD" />
+      <PasswordField fx:id="txtPassword" layoutX="117.0" layoutY="305.0" />
+      <PasswordField fx:id="txtPasswordCheck" layoutX="117.0" layoutY="350.0" />
+      <Label layoutX="29.0" layoutY="355.0" text="PWD Check" />
+      <Label layoutX="29.0" layoutY="400.0" text="NAME" />
+      <Label layoutX="29.0" layoutY="445.0" text="BIRTH" />
+      <Label layoutX="29.0" layoutY="535.0" text="FUNNEL" />
+      <TextField fx:id="txtName" layoutX="117.0" layoutY="395.0" />
+      <Label layoutX="29.0" layoutY="490.0" text="NUMBER" />
+      <TextField fx:id="txtPhoneNumber" layoutX="117.0" layoutY="485.0" prefHeight="29.0" prefWidth="172.0" promptText="숫자만 입력해주세요." />
+      <ImageView fx:id="imgUserPhoto" fitHeight="230.0" fitWidth="200.0" layoutX="380.0" layoutY="260.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/defaultPhoto.png" />
+         </image></ImageView>
+      <Button fx:id="btnUserPhotoUp" layoutX="428.0" layoutY="503.0" mnemonicParsing="false" style="-fx-background-color: CED8F6;" text="Up" />
+      <Button fx:id="btnEdit" layoutX="413.0" layoutY="610.0" mnemonicParsing="false" style="-fx-background-color: CED8F6;" text="Registration!">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button fx:id="btnUserPhotoDown" layoutX="470.0" layoutY="503.0" mnemonicParsing="false" style="-fx-background-color: CED8F6;" text="Delete" />
+      <TextField fx:id="txtSurbey" layoutX="117.0" layoutY="530.0" />
+      <TextField fx:id="txtBirth" layoutX="117.0" layoutY="440.0" />
+      <Separator layoutX="15.0" layoutY="207.0" prefHeight="3.0" prefWidth="565.0" />
+      <Label layoutX="31.0" layoutY="30.0" text="보안을 위해 로그인 정보를 한번 더 확인합니다.">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="108.0" text="ID" />
+      <Label layoutX="29.0" layoutY="148.0" text="PWD" />
+      <TextField fx:id="txtIdEntryCheck" layoutX="117.0" layoutY="103.0" />
+      <PasswordField fx:id="txtPasswordEntryCheck" layoutX="117.0" layoutY="143.0" />
+      <Button fx:id="btnMyPageCheck" layoutX="329.0" layoutY="143.0" mnemonicParsing="false" style="-fx-background-color: #CED8F6;" text="Login" />
+      <Button fx:id="btnUserSecession" layoutX="5.0" layoutY="663.0" mnemonicParsing="false" style="-fx-background-color: CED8F6;" text="secession :-(">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

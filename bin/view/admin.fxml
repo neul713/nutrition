@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="950.0" style="-fx-background-color: #CED8F6;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminController">
+   <children>
+      <TabPane prefHeight="600.0" prefWidth="950.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="User">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="btnUserDelete" layoutX="732.0" layoutY="124.0" mnemonicParsing="false" style="-fx-background-color: #CED8F6;" text="Delete">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Button>
+                        <Button fx:id="btnChartView" layoutX="29.0" layoutY="45.0" mnemonicParsing="false" style="-fx-background-color: #CED8F6;" text="Charts">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Button>
+                        <Button fx:id="btnUserAllView" layoutX="732.0" layoutY="81.0" mnemonicParsing="false" style="-fx-background-color: #CED8F6;" text="ALL">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Button>
+                        <TextField fx:id="txtUserSearch" layoutX="431.0" layoutY="45.0" promptText="이름을 입력해주세요.">
+                           <font>
+                              <Font size="17.0" />
+                           </font></TextField>
+                        <Button fx:id="btnUserSearch" layoutX="627.0" layoutY="45.0" mnemonicParsing="false" style="-fx-background-color: #CED8F6;" text="Search">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Button>
+                        <TableView fx:id="userTableView" layoutX="29.0" layoutY="81.0" prefHeight="445.0" prefWidth="680.0" />
+                        <ImageView fx:id="imgUser" fitHeight="230.0" fitWidth="200.0" layoutX="732.0" layoutY="296.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label layoutX="744.0" layoutY="262.0" text="User Image">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Label>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Product">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="productTableView" layoutX="29.0" layoutY="81.0" prefHeight="445.0" prefWidth="680.0" />
+                        <Button fx:id="btnProductSearch" layoutX="627.0" layoutY="45.0" mnemonicParsing="false" style="-fx-background-color: #CED8F6;" text="Search">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Button>
+                        <TextField fx:id="txtProductSearch" layoutX="431.0" layoutY="45.0" promptText="제품명을 입력해주세요.">
+                           <font>
+                              <Font size="17.0" />
+                           </font></TextField>
+                        <Button fx:id="btnProductAllView" layoutX="732.0" layoutY="81.0" mnemonicParsing="false" style="-fx-background-color: #CED8F6;" text="ALL">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Button>
+                        <Button fx:id="btnProductDelete" layoutX="732.0" layoutY="210.0" mnemonicParsing="false" style="-fx-background-color: #CED8F6;" text="Delete">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Button>
+                        <Button fx:id="btnProductEdit" layoutX="732.0" layoutY="167.0" mnemonicParsing="false" style="-fx-background-color: #CED8F6;" text="Edit">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Button>
+                        <Button fx:id="btnProductRegisterOpen" layoutX="732.0" layoutY="124.0" mnemonicParsing="false" style="-fx-background-color: #CED8F6;" text="Registration">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Button>
+                        <ImageView fx:id="imgProduct" fitHeight="230.0" fitWidth="200.0" layoutX="732.0" layoutY="296.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label layoutX="744.0" layoutY="262.0" text="Product Image">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Message">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="messageTableView" layoutX="29.0" layoutY="81.0" prefHeight="445.0" prefWidth="680.0" />
+                        <Button fx:id="btnMessageDelete" layoutX="732.0" layoutY="81.0" mnemonicParsing="false" style="-fx-background-color: #CED8F6;" text="Delete">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
